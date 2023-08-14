@@ -8,4 +8,4 @@ mainwindow = LoginWindow()
 try:
     sys.exit(app.exec_())
 except:
-    print("Exiting")
+    print("Exiting")    

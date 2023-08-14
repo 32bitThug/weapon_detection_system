@@ -4,22 +4,21 @@ from settings_window import SettingsWindow
 from register_wd import RegisterWindow
 import sqlite3
 
-# LoginWindow class that manages login and opening the setting window
+
 class LoginWindow(QMainWindow):
     def __init__(self):
         super(LoginWindow, self).__init__()
-        loadUi('UI/login_window.ui', self)
+        loadUi('Client\\UI\\login_window.ui', self)
         self.register_button.clicked.connect(self.go_to_register_page)
         self.login_button.clicked.connect(self.open_settings_window)
 
         self.show()
-	
-    # Open registration page
+
     def go_to_register_page(self):
         self.register_wd = RegisterWindow()
         self.register_wd.displayInfo()
         
-	# Opens settings window, passes the received token and closes login window
+
     def open_settings_window(self):
         
         username = self.username_input.text().strip()

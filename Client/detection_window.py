@@ -8,7 +8,7 @@ from detection import Detection
 class DetectionWindow(QMainWindow):
 	def __init__(self):
 		super(DetectionWindow, self).__init__()	
-		loadUi('UI/detection_window.ui', self)
+		loadUi('Client\\UI\\detection_window.ui', self)
 
 		self.stop_detection_button.clicked.connect(self.close)
 

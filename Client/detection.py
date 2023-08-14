@@ -21,7 +21,7 @@ class Detection(QThread):
 		starting_time = time.time()
 
 		self.running = True
-		gun_cascade=cv2.CascadeClassifier('guns1.xml')
+		gun_cascade=cv2.CascadeClassifier('Client\cascade.xml')
 		# Starts camera
 		cap = cv2.VideoCapture(0)
 		

@@ -5,7 +5,7 @@ import sqlite3
 class RegisterWindow(QMainWindow):
     def __init__(self):
         super(RegisterWindow, self).__init__()
-        loadUi('UI/registeration_window.ui', self)
+        loadUi('Client\\UI\\registeration_window.ui', self)
         self.register_buttonf.clicked.connect(self.go_to_login)
     
     def displayInfo(self):
